@@ -12,5 +12,3 @@ def words_in_both(s1, s2):
             result.append(x)
     return result
 
-
-print(words_in_both("She is a jack of all trades", "Jack was tallest of all"))
