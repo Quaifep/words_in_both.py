@@ -6,9 +6,8 @@ def words_in_both(s1, s2):
     """Takes two strings in words, compares them, and returns what is similar."""
     words1 = s1.lower().split(" ")
     words2 = s2.lower().split(" ")
-    result = []
+    common_words = []
     for x in words1:
-        if (x in words2) and (x not in result):
-            result.append(x)
-    return result
-
+        if (x in words2) and (x not in common_words):
+            common_words.append(x)
+    return common_words
